@@ -1,0 +1,53 @@
+body {
+  background: url(images/pexels-photo-139259.jpeg) no-repeat center center fixed;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+header {
+  font-family: 'Amatic SC', cursive;
+  font-size: 5em;
+  text-align: center;
+}
+
+.desc {
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#formContainer {
+  float: left;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 1em;
+  width: 50%;
+}
+
+#form {
+  padding-left: 55%;
+  padding-top: 5%;
+}
+
+button {
+  border: solid black 1px;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 1em;
+  background-color: #fff;
+}
+
+#listContainer {
+  float: left;
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 1em;
+  width: 50%;
+}
+
+#displayList {
+  padding-left: 15%;
+}
+
+#displayTotal {
+  padding-left: 15%;
+}
