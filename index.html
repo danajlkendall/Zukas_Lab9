@@ -11,7 +11,7 @@
     </header>
 
     <p class="desc">Enter new items into the form below and add them to the existing grocery list.</p>
-      <form>
+      <div class="form">
         New Item:
       <br>
         <input type="text" name="name" id="newItemName">
@@ -21,11 +21,13 @@
         <input type="number" name="price" id="newItemPrice">
       <br>
       <br>
-        <input type="submit" value="Submit">
-      </form>
-
-      <div id="displayList">
-
+        <button onclick="addItem()" type="submit" value="Submit">
       </div>
+
+      <div id="displayList"></div>
+
+      <div id="displayTotal"></div>
+
+      <script src="script.js" charset="utf-8"></script>
   </body>
 </html>

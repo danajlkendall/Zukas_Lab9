@@ -19,9 +19,9 @@ function runTotal() {
   for (var i=0; i<list.length; i++) {
     totalCost = totalCost + list[i].price;
   }
-  var listTotal = document.createElement('div');
+  var listTotal = document.createElement('p');
   listTotal.innerHTML = "Total: $"+totalCost;
-  document.getElementById("displayList").appendChild(listTotal);
+  document.getElementById('displayTotal').appendChild(listTotal);
 }
 
 runList();
@@ -35,6 +35,8 @@ function addItem(){
     price: newItemPrice
   }
   list.push(newItem);
+  displayList.innerHTML="";
+  displayTotal.innerHTML="";
   runList();
   runTotal();
 }
