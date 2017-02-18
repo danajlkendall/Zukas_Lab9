@@ -37,6 +37,8 @@ function addItem(){
   list.push(newItem);
   displayList.innerHTML="";
   displayTotal.innerHTML="";
+  document.getElementById('newItemName').value='';
+  document.getElementById('newItemPrice').value='';
   runList();
   runTotal();
 }
