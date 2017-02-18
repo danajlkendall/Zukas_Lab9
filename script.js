@@ -7,9 +7,9 @@ var list = [item1, item2, item3, item4];
 
 function runList() {
   for (var i=0; i<list.length; i++) {
-    var shoppingItem = document.createElement('div');
-    shoppingItem.innerHTML=list[i].name+": $"+list[i].price;
-    document.body.appendChild(shoppingItem);
+    var listItem = document.createElement('p');
+    listItem.innerHTML=list[i].name+": $"+list[i].price;
+    document.getElementById('displayList').appendChild(listItem);
   }
 }
 
@@ -19,21 +19,22 @@ function runTotal() {
   for (var i=0; i<list.length; i++) {
     totalCost = totalCost + list[i].price;
   }
-
   var listTotal = document.createElement('div');
   listTotal.innerHTML = "Total: $"+totalCost;
-  document.body.appendChild(listTotal);
+  document.getElementById("displayList").appendChild(listTotal);
 }
 
 runList();
 runTotal();
 
 function addItem(){
-  var newItem = new Object();
-  newItem.name=document.getElementById('newItemName').value;
-  newItem.price=document.getElementById('newItemPrice').value*1;
+  var newItemName = document.getElementById('newItemName').value;
+  var newItemPrice = document.getElementById('newItemPrice').value*1;
+  var newItem = {
+    name: newItemName,
+    price: newItemPrice
+  }
   list.push(newItem);
-  document.getElementsByTagName('div').innerHTML = "";
   runList();
   runTotal();
 }

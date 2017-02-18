@@ -6,17 +6,26 @@
     <script src="script.js" charset="utf-8"></script>
   </head>
   <body>
-    <form>
-      New Item:
-        <br>
-          <input type="text" name="name">
-        <br>
-      Item Price:
-        <br>
-          <input type="number" name="price">
-        <br>
-        <br>
-          <input type="submit" value="Submit">
-    </form> 
+    <header>
+      Dana's Granola Groceries
+    </header>
+
+    <p class="desc">Enter new items into the form below and add them to the existing grocery list.</p>
+      <form>
+        New Item:
+      <br>
+        <input type="text" name="name" id="newItemName">
+      <br>
+        Item Price:
+      <br>
+        <input type="number" name="price" id="newItemPrice">
+      <br>
+      <br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <div id="displayList">
+
+      </div>
   </body>
 </html>
